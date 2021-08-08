@@ -6,25 +6,42 @@ namespace learningProject
     {
         private static void Main(string[] args)
         {
-           /* Console.WriteLine("Enter your input here :");
+           Console.Write("If you want to exit Type Exit. \nInput 1 : ");
 
-            int input = Convert.ToInt32(Console.ReadLine());
-            for(int i=0; i<=input;i++)
-            {
-                if(i%3 ==0)
-                {
-                    Console.WriteLine('*');
-                }
-                else
-                {
-                    Console.WriteLine(i);
-                }
-            } */
+           string input = Console.ReadLine();
+           if(input == "exit" || input == "Exit")
+           {
+               return;
+           } 
+           double input1 =  Convert.ToDouble(input);
 
-                Console.WriteLine("Input : ");
-                int input = Convert.ToInt32(Console.ReadLine());
-                for (int x = 1; x >= input; x++)
-                Console.WriteLine(x);
+           Console.Write("Please Enter The Operator +, -. *, / : ");
+           char symbol = Convert.ToChar(Console.ReadLine());
+           Console.Write("Input 2 : ");
+           double input2 = Convert.ToDouble(Console.ReadLine());
+           if (symbol == '+')
+           {
+             double answer = input1 + input2;
+             Console.WriteLine(input1 +" "+ symbol+" "+ input2 + " = "+ answer);  
+           }
+           else if (symbol == '-')
+           {
+               Console.WriteLine(input1 - input2);
+           }
+           else if (symbol == '*')
+           {
+               Console.WriteLine(input1 * input2);
+           }
+           else if (symbol == '/')
+           {
+               Console.WriteLine(input1 / input2);
+           }
+          
+           else 
+           {
+               Console.WriteLine("Invalid Output");
+           }
+
         }       
     }
 }
