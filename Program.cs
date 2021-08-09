@@ -16,12 +16,9 @@ namespace learningProject
            }
            while(i.Length > 1)
            {
-               x++;
                i = i.Substring(0, i.Length - 1);
                Console.WriteLine(i);
            } 
-
         }      
-
     }
 }
