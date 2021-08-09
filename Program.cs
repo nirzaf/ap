@@ -7,8 +7,8 @@ namespace learningProject
     {
         private static void Main(string[] args)
         {
-            Collection<Subject> english = new Collection<Subject>();
-            Collection<Subject> maths = new Collection<Subject>();
+            Collection<Subject> english = new();
+            Collection<Subject> maths = new();
 
             Subject s1 = new();
             Subject s2 = new();
