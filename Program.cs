@@ -21,11 +21,11 @@ namespace learningProject
 
             s2.Id = 2;
             s2.Name = "Subash";
-            s2.Mark = 53; 
+            s2.Mark = 55; 
             
             s3.Id = 3;
             s3.Name = "Prakash";
-            s3.Mark = 53;
+            s3.Mark = 60;
 
             s4.Id = 4;
             s4.Name = "Malinga";
