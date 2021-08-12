@@ -6,21 +6,16 @@ namespace learningProject
     {
         private static void Main(string[] args)
         {
-            Console.Write("Input 1 : ");
-            string input = Console.ReadLine();
-            double input1;
-            if (input == "Exit" || input == "exit")
+            int x = 1;
+            int number = 1;
+            int multiple = 1;
+            while (x <= 10)
             {
-                return;
+                Console.Write(number * multiple + " ");
+                x++;
+                number++;
             }
-            else
-            {
-                input1 = Convert.ToDouble(input);
-            }
-            Console.Write("Enter the Operator +, -, * , / : ");
-            char symbol = Convert.ToChar(Console.ReadLine());
-            Console.Write("Input 2 : ");
-            double input2 = Convert.ToDouble(Console.ReadLine());
+           
         }       
     }
 }
